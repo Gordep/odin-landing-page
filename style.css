@@ -1,4 +1,5 @@
 body {
+  font-family: "Roboto", arial;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -6,6 +7,7 @@ body {
 }
 
 .header {
+  font-weight: bold;
   background: #1f2937;
   display: flex;
   justify-content: space-between;
@@ -45,6 +47,7 @@ body {
 .hero-title {
   font-size: 48px;
   color: #f9faf8;
+  font-weight: bold;
 }
 .hero-body {
   font-size: 18px;
@@ -61,15 +64,31 @@ body {
 
 .content-two {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 0 100px;
+  gap: 20px;
 }
 
+.info-title {
+  margin-top: 100px;
+}
+.info-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+}
 .content-three {
   background: #e5e7eb;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0 100px;
   gap: 20px;
 }
@@ -78,11 +97,15 @@ body {
   font-style: italic;
   color: #1f2937;
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .author {
+  font-weight: bold;
   margin-bottom: 100px;
   display: flex;
+  justify-content: flex-end;
 }
 
 .content-four {
@@ -94,11 +117,21 @@ body {
 
 .action-call {
   background: #3882f6;
-  border-radius: 25px;
+  color: #e5e7eb;
+  border-radius: 10px;
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
+  justify-content: space-between;
+  padding: 50px;
   flex: 1;
+}
+.action-text {
+  font-weight: bold;
+}
+.action-body {
+  font-size: small;
+  font-weight: 100;
 }
 
 .footer {
